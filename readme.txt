@@ -1,6 +1,6 @@
 === Financial Calculator by Calculator.iO ===
 Contributors: calculatorio
-Tags: 
+Tags: finance calculator, investment return calculator, present value calculation, future value estimator, financial planning tool, interest calculator, loan comparison calculator, retirement savings calculation, amortization schedule tool, debt payoff planner
 Requires at least: 5.0
 Tested up to: 6.4.0
 Stable tag: 1.0.0
