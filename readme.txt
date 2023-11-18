@@ -1,4 +1,4 @@
-=== Financial Calculator by Calculator.iO ===
+=== Financial Calculator ===
 Contributors: calculatorio
 Tags: finance calculator, investment return calculator, present value calculation, future value estimator, financial planning tool, interest calculator, loan comparison calculator, retirement savings calculation, amortization schedule tool, debt payoff planner
 Requires at least: 5.0
