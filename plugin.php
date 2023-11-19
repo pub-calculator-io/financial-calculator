@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Financial Calculator by www.calculator.io
+Plugin Name: CI Financial calculator
 Plugin URI: https://www.calculator.io/financial-calculator/
 Description: You can use free financial calculators online to estimate your investments’ future value (FV), compounding periods (N), interest rate (I/Y), periodic payment (PMT), and present value (PV).
 Version: 1.0.0
