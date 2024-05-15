@@ -156,14 +156,17 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
-                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script"></script>
+                	<script type="text/javascript" src="./assets/js/lib/chartjs/chart.min.js" id="chartjs_lib" defer></script>
+                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script" defer></script>
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -178,8 +181,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><style>
 	.result-table-row.disabled {
 		display: none;
@@ -196,34 +198,34 @@
 			<tbody class="result-table-row find related-to-find-pmt related-to-find-iy related-to-find-n related-to-find-pv">
 				<tr>
 					<th class="semibold">FV</th>
-					<td class="semibold" id="fv-result">$-91,370.62</td>
+					<td class="semibold animate" id="fv-result">$-91,370.62</td>
 				</tr>
 			</tbody>
 			<tbody class="result-table-row find related-to-find-fv related-to-find-iy related-to-find-n related-to-find-pv disabled">
 				<tr>
 					<th class="semibold">PMT</th>
-					<td class="semibold" id="pmt-result">$-2,159.32</td>
+					<td class="semibold animate" id="pmt-result">$-2,159.32</td>
 				</tr>
 			</tbody>
 			<tbody class="result-table-row find related-to-find-fv related-to-find-pmt related-to-find-n related-to-find-pv disabled">
 				<tr>
 					<th class="semibold">I/Y</th>
-					<td class="semibold" id="iy-result">12.61%</td>
+					<td class="semibold animate" id="iy-result">12.61%</td>
 				</tr>
 			</tbody>
 			<tbody class="result-table-row find related-to-find-fv related-to-find-pmt related-to-find-iy related-to-find-pv disabled">
 				<tr>
 					<th class="semibold">N</th>
-					<td class="semibold" id="n-result">11.5</td>
+					<td class="semibold animate" id="n-result">11.5</td>
 				</tr>
 			</tbody>
 			<tbody class="result-table-row find related-to-find-fv related-to-find-pmt related-to-find-iy related-to-find-n disabled">
 				<tr>
 					<th class="semibold">PV</th>
-					<td class="semibold" id="pv-result">$16,144.72</td>
+					<td class="semibold animate" id="pv-result">$16,144.72</td>
 				</tr>
 			</tbody>
-			<tbody class="result-table-sum">
+			<tbody class="result-table-sum animate">
 				<tr>
 					<th>Sum of all periodic payments</th>
 					<td id="result-total-payments">$-22,500.00</td>
@@ -276,7 +278,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">PV</th>
 						<th class="indigo">PMT</th>
 						<th class="indigo">INTEREST</th>
@@ -327,7 +329,7 @@
 						<td>$235,022.69</td>
 					</tr>
 					<tr>
-						<th class="indigo text-center" colspan="5">Year #1 End</th>
+						<th class="indigo text-center" colspan="5">Year 1 End</th>
 					</tr>
 					<tr>
 						<td class="text-center">1</td>
@@ -376,9 +378,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- <script src="./assets/js/chart.js"./assets/js/chart.js').then(e => switchTheme = e.default)
-</script> -->
 </span>
     </div>
 </div>

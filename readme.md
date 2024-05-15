@@ -3,7 +3,6 @@
 You can use free financial calculators online to estimate your investments’ future value (FV), compounding periods (N), interest rate (I/Y), periodic payment (PMT), and present value (PV).
 
 ![Financial Calculator Input Form](/assets/images/screenshot-1.png "Financial Calculator Input Form")
-![Financial Calculator Calculation Results](/assets/images/screenshot-2.png "Financial Calculator Calculation Results")
 
 ## Installation
 

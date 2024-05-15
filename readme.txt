@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Financial Calcu
 == Screenshots ==
 
 1. The Financial Calculator Input Form.
-2. The Financial Calculator Calculation Results.
 
 == Installation ==
 

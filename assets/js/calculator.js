@@ -38,7 +38,7 @@ function calculate(){
 	else if(calcType === 'iy'){
 		const iy = get_interest(fv, pv, years, compound, contribution, contributionF, inEnd);
 		if(iy === false){
-			return input.error(['present', 'future', 'payment', 'number'], 'Sorry, this calculator can not find the interest rate based on the inputs.', true);
+			return input.error(['present', 'future', 'payment', 'number'], 'Cannot find the interest rate based on the inputs.', true);
 		}
 		const result = get_fv_table_payments_by_periods(pv, years, iy, compound, contribution, contributionF, inEnd);
 		output.val(iy * 100 + '%').set('iy-result');
@@ -47,7 +47,7 @@ function calculate(){
 	else {
 		let periods = get_periods(fv, pv, rate / 100, compound, contribution, contributionF, inEnd)
 		if(periods === false){
-			return input.error(['present', 'future', 'payment', 'interest'], 'Unable to solve. Please use reasonable numbers.', true);
+			return input.error(['present', 'future', 'payment', 'interest'], 'Unable to solve. Please enter reasonable numbers.', true);
 		}
 		output.val(periods).set('n-result');
 
